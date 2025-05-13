@@ -29,7 +29,7 @@ body{
 }
 
 .app h1{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     color: #1e1e2f;
     padding-bottom: 15px;
@@ -45,7 +45,7 @@ body{
 }
 
 #btn-group h2{
-    font-size: 40px;
+    font-size: 25px;
     padding-top: 15px;
     color: #1e1e2f;
 }
@@ -64,7 +64,7 @@ body{
     width: 100%;
     border: 1px solid #1e1e2f;
     border-radius: 4px;
-    padding: 15px;
+    padding: 10px;
     text-align: left;
     transition: all 0.3s linear;
     font-weight: bold;
@@ -119,4 +119,23 @@ body{
         padding-top: 15px;
         color: #1e1e2f;
     }
+    #answer-buttons{
+        gap: 5px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+    .btn{
+        font-size: 16px;
+        width: 100%;
+        border: 1px solid #1e1e2f;
+        border-radius: 4px;
+        padding: 7px;
+        text-align: left;
+        transition: all 0.3s linear;
+        font-weight: bold;
+    }
+
 }

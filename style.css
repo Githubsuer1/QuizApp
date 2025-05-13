@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',  sans-serif;
+}
+
+body{
+    background-color: #1e1e2f; /* Dark navy */
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app{
+    width:45%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.app h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #1e1e2f;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #1e1e2f;
+}
+
+#btn-group{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#btn-group h2{
+    font-size: 40px;
+    padding-top: 15px;
+    color: #1e1e2f;
+}
+
+#answer-buttons{
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.btn{
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #1e1e2f;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: left;
+    transition: all 0.3s linear;
+    font-weight: bold;
+}
+
+.btn:hover:not([disabled]){
+    background-color: #1e1e2f;
+    color: #fff;
+}
+
+/* .btn:hover{
+    cursor: no-drop;
+} */
+
+#btn-next{
+    font-size: 20px;
+    width: 150px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    margin: 20px auto 0;
+    display:none;
+    border: none;
+    background-color: #1e1e2f;
+    color: white;
+}
+
+.correct{
+    background-color: rgb(97, 186, 97);
+}
+
+.incorrect{
+    background-color: rgb(211, 116, 116);
+}
+
+
+@media (max-width:720px) { 
+     .app{
+        width:70%;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 7px;
+        padding: 20px;
+    }
+    .app h1{
+        font-size: 28px;
+        color: #1e1e2f;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #1e1e2f;
+    }
+    #btn-group h2{
+        font-size: 20px;
+        padding-top: 15px;
+        color: #1e1e2f;
+    }
+}
